@@ -1,3 +1,108 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    background-color: rgba(27, 27, 27, 0.979);
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app--main__container {
+    display: flex;
+    flex-direction: column;
+    
+    width: 400px;
+    background-color: rgb(26, 26, 26);
+    border-radius: 10px;
+    color: white;
+}
+
+.info--nav__container {
+    text-align: center;
+}
+
+.info--picture {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.info--nav__container > h1 {
+    padding: 10px 0px;
+    padding-bottom: 5px;
+    margin: 0;
+    font-size: 35px;
+}
+
+.info--nav__container > h4 {
+    padding: 0px;
+    padding-bottom: 15px;
+    margin: 0;
+    font-weight: lighter;
+    color: rgb(206, 165, 245);
+}
+
+.info--email__link, 
+.info--linkedin__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+    height: 40px;
+    margin: 0px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info--email__link {
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+.info--linkedin__link {
+    background-color: rgb(13, 79, 181);
+}
+
+.info--email__link > span, 
+.info--linkedin__link > span {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.footer--container {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(17, 17, 17);
+    padding: 20px 0px;
+    border-radius: 0px 0px 10px 10px;
+} 
+
+.footer--github__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    margin: 0px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(206, 165, 245);
+    color: black;
+}
+
+.footer--github__link span {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+

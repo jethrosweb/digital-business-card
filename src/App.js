@@ -6,7 +6,7 @@ import Interests from "./components/Interests"
 
 export default function App() {
     return (
-        <div>
+        <div className="app--main__container">
             <Info />
             <About />
             <Interests />
