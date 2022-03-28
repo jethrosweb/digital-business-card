@@ -1,3 +1,4 @@
+/* Document setup */
 * {
     box-sizing: border-box;
 }
@@ -13,6 +14,7 @@ body {
     align-items: center;
 }
 
+/* Main container */
 .app--main__container {
     display: flex;
     flex-direction: column;
@@ -23,6 +25,7 @@ body {
     color: white;
 }
 
+/* Info (Nav) container & children */
 .info--nav__container {
     text-align: center;
 }
@@ -33,7 +36,7 @@ body {
 }
 
 .info--nav__container > h1 {
-    padding: 10px 0px;
+    padding-top: 20px;
     padding-bottom: 5px;
     margin: 0;
     font-size: 35px;
@@ -55,12 +58,13 @@ body {
     width: 135px;
     height: 40px;
     margin: 0px 15px;
+    margin-bottom: 15px;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .info--email__link {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
 }
 
@@ -75,6 +79,30 @@ body {
     padding: 0 5px;
 }
 
+.info--nav__container > a:hover {
+    opacity: 0.8;
+}
+
+/* Main container (About & Interests) */
+.main--container {
+    padding: 0px 40px;
+}
+
+.main--title {
+    color: rgb(233, 233, 233);
+    margin: 0;
+    margin-top: 20px;
+}
+
+.main--text {
+    color: rgb(155, 155, 155);
+    font-size: small;
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* Footer container & children */
 .footer--container {
     width: 100%;
     display: inline-flex;
@@ -85,6 +113,10 @@ body {
     border-radius: 0px 0px 10px 10px;
 } 
 
+.footer--container > a:hover {
+    opacity: 0.8;
+}
+
 .footer--github__link {
     display: inline-flex;
     justify-content: center;
@@ -94,7 +126,7 @@ body {
     margin: 0px 15px;
     border-radius: 5px;
     cursor: pointer;
-    background-color: rgb(206, 165, 245);
+    background-color: rgb(155, 155, 155);
     color: black;
 }
 
