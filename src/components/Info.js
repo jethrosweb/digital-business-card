@@ -1,19 +1,22 @@
 import React from "react"
-import DisplayPic from "../images/photo.jpg"
+import DisplayPic from "../pics/photo.jpg"
 
-export default function Info() {
+export default function Info(props) {
     return (
-        <nav className="info--nav__container">
+        <nav className={`info--nav__container ${props.darkMode ? "dark" : ""}`}>
             <img src={DisplayPic} alt="Display Picture" className="info--picture" />
+            <span className="info--theme__icon" onClick={props.toggleDarkMode}>
+                <ion-icon name="contrast-sharp"></ion-icon>
+            </span>
             <h1>Jethro Dean</h1>
             <h4>Frontend Developer</h4>
-            <a className="info--email__link">
+            <a href="mailto: jethroldean@gmail.com" target="_blank" className="info--email__link">
                 <span>
                     <ion-icon name="mail"></ion-icon>
                 </span>
                 <span>Email</span>
             </a>
-            <a className="info--linkedin__link">
+            <a href="https://www.linkedin.com/in/jethro-d/" target="_blank" className="info--linkedin__link">
                 <span>
                     <ion-icon name="logo-linkedin"></ion-icon>
                 </span>

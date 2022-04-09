@@ -4,8 +4,11 @@
 }
 
 body {
-    background-color: rgba(27, 27, 27, 0.979);
     margin: 0;
+}
+
+.app--background {
+    background-color: rgba(255, 255, 255, 0.979);
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -14,15 +17,21 @@ body {
     align-items: center;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 /* Main container */
 .app--main__container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
     width: 400px;
-    background-color: rgb(26, 26, 26);
+    background-color: rgb(228, 228, 228);
+    color: rgb(0, 0, 0);
     border-radius: 10px;
-    color: white;
 }
 
 /* Info (Nav) container & children */
@@ -33,6 +42,14 @@ body {
 .info--picture {
     width: 100%;
     border-radius: 10px 10px 0px 0px;
+    position: relative;
+}
+
+.info--theme__icon {
+    float: right;
+    margin-right: 10px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
 }
 
 .info--nav__container > h1 {
@@ -47,7 +64,7 @@ body {
     padding-bottom: 15px;
     margin: 0;
     font-weight: lighter;
-    color: rgb(206, 165, 245);
+    color: rgb(149, 45, 247);
 }
 
 .info--email__link, 
@@ -65,11 +82,14 @@ body {
 
 .info--email__link {
     background-color: rgb(255, 255, 255);
+    text-decoration: none;
     color: rgb(0, 0, 0);
 }
 
 .info--linkedin__link {
     background-color: rgb(13, 79, 181);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
 .info--email__link > span, 
@@ -89,13 +109,11 @@ body {
 }
 
 .main--title {
-    color: rgb(233, 233, 233);
     margin: 0;
     margin-top: 20px;
 }
 
 .main--text {
-    color: rgb(155, 155, 155);
     font-size: small;
     line-height: 1.5;
     margin-top: 10px;
@@ -108,7 +126,7 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(201, 201, 201);
     padding: 20px 0px;
     border-radius: 0px 0px 10px 10px;
 } 
@@ -126,8 +144,9 @@ body {
     margin: 0px 15px;
     border-radius: 5px;
     cursor: pointer;
-    background-color: rgb(155, 155, 155);
+    background-color: rgb(255, 255, 255);
     color: black;
+    text-decoration: none;
 }
 
 .footer--github__link span {
@@ -135,6 +154,214 @@ body {
     align-items: center;
     padding: 0 5px;
     cursor: pointer;
-    font-weight: bold;
 }
 
+/* Dark Mode */
+.dark.app--background {
+    background-color: rgba(70, 70, 70, 0.979);
+}
+
+.dark .app--main__container {
+    background-color: rgb(26, 26, 26);
+    border-radius: 10px;
+}
+
+.dark .info--theme__icon {
+    color: rgb(255, 255, 255);
+}
+
+.dark .info--nav__container > h1 {
+    color: rgb(255, 255, 255);
+}
+
+.dark .info--nav__container > h4 {
+    color: rgb(208, 171, 241);
+}
+
+.dark .info--email__link {
+    background-color: rgb(54, 54, 54);
+    color: rgb(255, 255, 255);
+}
+
+.dark .main--title {
+    color: rgb(233, 233, 233);
+}
+
+.dark .main--text {
+    color: rgb(155, 155, 155);
+}
+
+.dark .footer--container {
+    background-color: rgb(17, 17, 17);
+}
+
+.dark .footer--github__link {
+    background-color: rgb(54, 54, 54);
+    color: rgb(255, 255, 255);   
+}
+
+/* Popup */
+.popup--container {
+    position: absolute;
+}
+
+.popup--container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(241, 241, 241);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+/* Popup header */
+.popup--header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 100%;
+    background-color: rgb(208, 171, 241);
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.popup--header__logo {
+    width: 30px;
+    height: 30px;
+    margin: 0px 5px;
+}
+
+.popup--header__title {
+    font-family: "Vandalism", sans-serif;
+    font-size: 40px;
+    margin: 0px 5px;
+}
+
+/* Popup main */
+.popup--pages__container {
+    height: 850px;
+    overflow: scroll;
+    width: 375px;
+}
+
+.popupMain--line {
+    width: 300px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.popup--pages {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup--pages__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup--pages__title {
+    font-size: 25px;
+    margin: 10px 0px 0px 10px;
+    color: rgb(43, 9, 73);
+}
+
+.popup--pages__date {
+    font-size: 12px;
+    margin: 0px 0px 0px 15px;
+}
+
+.popup--pages__links {
+    margin: 10px 10px 0px 0px;
+}
+
+.popup--pages__links > a {
+    text-decoration: none;
+    margin: 0 2px;
+    color: rgb(0, 0, 0);
+    padding: 5px 5px 0px 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.popup--pages__links .popup--pages__site {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    display: flex-inline;
+}
+
+.popup--pages__links > a:hover {
+    opacity: 0.8;
+}
+
+.popup--pages__image {
+    width: 80%;
+    border-radius: 5px;
+    margin: 10px 0px;
+    align-self: center;
+}
+
+.popup--pages__about {
+    font-size: 14px;
+    margin: 0px 10px 0px 10px;
+    text-align: center;
+}
+
+.popup--pages__languages {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.popup--pages__languages > span {
+    margin: 0px 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 6px 5px 0px 5px;
+}
+
+.popup--language__html {
+    background-color: rgb(218, 54, 29);
+    color: rgb(255, 255, 255);
+}
+
+.popup--language__css {
+    background-color: rgb(68, 43, 104);
+    color: rgb(255, 255, 255);
+}
+
+.popup--language__js {
+    background-color: rgb(238, 219, 73);
+    color: rgb(0, 0, 0);
+}
+
+.popup--language__react {
+    background-color: rgb(82, 210, 250);
+    color: rgb(255, 255, 255);
+}
+
+/* Popup footer */
+.popup--footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(208, 171, 241);
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.popup--footer > button {
+    background-color: white;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+.popup--footer > button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
