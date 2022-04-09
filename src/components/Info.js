@@ -5,11 +5,14 @@ export default function Info(props) {
     return (
         <nav className={`info--nav__container ${props.darkMode ? "dark" : ""}`}>
             <img src={DisplayPic} alt="Display Picture" className="info--picture" />
-            <span className="info--theme__icon" onClick={props.toggleDarkMode}>
-                <ion-icon name="contrast-sharp"></ion-icon>
-            </span>
+            <a className="info--theme__icon" onClick={props.toggleDarkMode}>
+                <ion-icon name="contrast-outline"></ion-icon>
+            </a>
+            <a href="https://github.com/jethrosweb/digital-business-card" target="_blank" className="info--code__link">
+                <ion-icon name="code-slash-outline"></ion-icon>
+            </a>
             <h1>Jethro Dean</h1>
-            <h4>Frontend Developer</h4>
+            <h4>Frontend Web Developer | React</h4>
             <a href="mailto: jethroldean@gmail.com" target="_blank" className="info--email__link">
                 <span>
                     <ion-icon name="mail"></ion-icon>

@@ -10,7 +10,7 @@ export default function Footer(props) {
                 <span>GitHub</span>
             </a>
 
-            <a className="footer--github__link" onClick={props.openPopup}>
+            <a className="footer--github__pages" onClick={props.openPopup}>
                 <span>
                     <ion-icon name="logo-github"></ion-icon>
                 </span>

@@ -31,10 +31,11 @@ export default function App() {
                     openPopup={openPopup}
                 />
             </div>
-            <div className="popup--container">
+            <div className={`popup--container ${darkMode ? "dark" : ""}`}>
                 <Popup 
                     trigger={pagesPopup} 
                     setTrigger={setPagesPopup}
+                    darkMode={darkMode}
                 />
             </div>
         </div>

@@ -37,19 +37,40 @@ body {
 /* Info (Nav) container & children */
 .info--nav__container {
     text-align: center;
+    position: relative;
+}
+
+.info--theme__icon {
+    text-decoration: none;
+    margin: 0 2px;
+    color: rgb(255, 255, 255);
+    padding: 5px 5px 0px 5px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    position: absolute;
+    left: 365px;
+    top: 5px;
+}
+
+.info--code__link {
+    text-decoration: none;
+    margin: 0 2px;
+    color: rgb(0, 0, 0);
+    padding: 5px 5px 0px 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    position: absolute;
+    left: 365px;
+    top: 35px;
+    opacity: 0.5;
 }
 
 .info--picture {
     width: 100%;
     border-radius: 10px 10px 0px 0px;
     position: relative;
-}
-
-.info--theme__icon {
-    float: right;
-    margin-right: 10px;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
 }
 
 .info--nav__container > h1 {
@@ -110,14 +131,33 @@ body {
 
 .main--title {
     margin: 0;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .main--text {
     font-size: small;
     line-height: 1.5;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.main--images {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.main--images > img {
+    width: 50px;
+    border-radius: 30px;
+    margin: 0px 10px 10px 10px;
+}
+
+.main--prompt__text {
+    font-size: 11px;
+    opacity: 0.5;
+    text-align: center;
 }
 
 /* Footer container & children */
@@ -149,55 +189,24 @@ body {
     text-decoration: none;
 }
 
-.footer--github__link span {
+.footer--github__pages {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    margin: 0px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(208, 171, 241);
+    color: black;
+    text-decoration: none;
+}
+
+.footer--github__link > span, .footer--github__pages > span {
     display: inline-flex;
     align-items: center;
     padding: 0 5px;
-    cursor: pointer;
-}
-
-/* Dark Mode */
-.dark.app--background {
-    background-color: rgba(70, 70, 70, 0.979);
-}
-
-.dark .app--main__container {
-    background-color: rgb(26, 26, 26);
-    border-radius: 10px;
-}
-
-.dark .info--theme__icon {
-    color: rgb(255, 255, 255);
-}
-
-.dark .info--nav__container > h1 {
-    color: rgb(255, 255, 255);
-}
-
-.dark .info--nav__container > h4 {
-    color: rgb(208, 171, 241);
-}
-
-.dark .info--email__link {
-    background-color: rgb(54, 54, 54);
-    color: rgb(255, 255, 255);
-}
-
-.dark .main--title {
-    color: rgb(233, 233, 233);
-}
-
-.dark .main--text {
-    color: rgb(155, 155, 155);
-}
-
-.dark .footer--container {
-    background-color: rgb(17, 17, 17);
-}
-
-.dark .footer--github__link {
-    background-color: rgb(54, 54, 54);
-    color: rgb(255, 255, 255);   
 }
 
 /* Popup */
@@ -265,7 +274,6 @@ body {
 .popup--pages__title {
     font-size: 25px;
     margin: 10px 0px 0px 10px;
-    color: rgb(43, 9, 73);
 }
 
 .popup--pages__date {
@@ -283,7 +291,7 @@ body {
     color: rgb(0, 0, 0);
     padding: 5px 5px 0px 5px;
     background-color: rgb(255, 255, 255);
-    border-radius: 3px;
+    border-radius: 20px;
     border: 1px solid rgb(0, 0, 0);
 }
 
@@ -353,15 +361,79 @@ body {
 
 .popup--footer > button {
     background-color: white;
-    width: 100px;
+    width: 40px;
     height: 40px;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
+    padding-left: 8px;
+    padding-top: 4px;
 }
 
 .popup--footer > button:hover {
     opacity: 0.8;
     cursor: pointer;
+}
+
+/* Dark Mode */
+.dark.app--background {
+    background-color: rgba(70, 70, 70, 0.979);
+}
+
+.dark .app--main__container {
+    background-color: rgb(26, 26, 26);
+    border-radius: 10px;
+}
+
+.dark .info--theme__icon {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.dark .info--nav__container > h1 {
+    color: rgb(255, 255, 255);
+}
+
+.dark .info--nav__container > h4 {
+    color: rgb(208, 171, 241);
+}
+
+.dark .info--email__link {
+    background-color: rgb(54, 54, 54);
+    color: rgb(255, 255, 255);
+}
+
+.dark .main--title {
+    color: rgb(255, 255, 255);
+}
+
+.dark .main--text {
+    color: rgb(255, 255, 255);
+}
+
+.dark .main--prompt__text {
+    color: rgb(233, 233, 233);
+}
+
+.dark .footer--container {
+    background-color: rgb(17, 17, 17);
+}
+
+.dark .footer--github__link {
+    background-color: rgb(54, 54, 54);
+    color: rgb(255, 255, 255);   
+}
+
+.dark .popup--container {
+    background-color: rgb(44, 44, 44);
+}
+
+.dark .popup--container .popup--pages__container {
+    color: white;
+}
+
+.dark .popup--container .popup--footer > button {
+    background-color: rgb(54, 54, 54);
+    color: rgb(255, 255, 255);   
 }
