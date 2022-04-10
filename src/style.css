@@ -1,3 +1,6 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Karla:wght@700&family=Rubik+Glitch&display=swap');
+
 /* Document setup */
 * {
     box-sizing: border-box;
@@ -242,7 +245,7 @@ body {
 }
 
 .popupHeader--title {
-    font-family: "Vandalism", sans-serif;
+    font-family: 'Rubik Glitch', cursive;
     font-size: 40px;
     margin: 0px 5px;
 }
