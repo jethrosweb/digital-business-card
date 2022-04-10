@@ -19,7 +19,8 @@ export default function App() {
     }
 
     return (
-        <div className={`app--background ${darkMode ? "dark" : ""}`}>
+        <div className={`page--background ${darkMode ? "dark" : ""}`}>
+
             <div className={`app--main__container ${darkMode ? "dark" : ""}`}>
                 <Info 
                     darkMode={darkMode}
@@ -31,6 +32,7 @@ export default function App() {
                     openPopup={openPopup}
                 />
             </div>
+
             <div className={`popup--container ${darkMode ? "dark" : ""}`}>
                 <Popup 
                     trigger={pagesPopup} 
@@ -38,6 +40,7 @@ export default function App() {
                     darkMode={darkMode}
                 />
             </div>
+            
         </div>
     )
 }

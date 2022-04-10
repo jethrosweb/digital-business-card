@@ -23,7 +23,7 @@ export default function Popup(props) {
     return (props.trigger) ? (
         <div>
             <PopupHeader />
-            <div className="popup--pages__container">
+            <div className="popupMain">
                 {popupMainElements}
             </div>
             <PopupFooter closePopup={closePopup} />

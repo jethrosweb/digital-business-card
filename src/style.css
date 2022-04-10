@@ -7,11 +7,10 @@ body {
     margin: 0;
 }
 
-.app--background {
+.page--background {
     background-color: rgba(255, 255, 255, 0.979);
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +34,7 @@ body {
 }
 
 /* Info (Nav) container & children */
-.info--nav__container {
+.info--container {
     text-align: center;
     position: relative;
 }
@@ -47,10 +46,11 @@ body {
     padding: 5px 5px 0px 5px;
     background-color: rgb(0, 0, 0);
     border-radius: 20px;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
     position: absolute;
     left: 365px;
     top: 5px;
+    opacity: 0.8;
 }
 
 .info--code__link {
@@ -73,14 +73,14 @@ body {
     position: relative;
 }
 
-.info--nav__container > h1 {
+.info--container > h1 {
     padding-top: 20px;
     padding-bottom: 5px;
     margin: 0;
     font-size: 35px;
 }
 
-.info--nav__container > h4 {
+.info--container > h4 {
     padding: 0px;
     padding-bottom: 15px;
     margin: 0;
@@ -120,7 +120,7 @@ body {
     padding: 0 5px;
 }
 
-.info--nav__container > a:hover {
+.info--container > a:hover {
     opacity: 0.8;
 }
 
@@ -189,7 +189,7 @@ body {
     text-decoration: none;
 }
 
-.footer--github__pages {
+.footer--pages__popup {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -199,11 +199,12 @@ body {
     border-radius: 5px;
     cursor: pointer;
     background-color: rgb(208, 171, 241);
-    color: black;
+    box-shadow: 1px 1px 10px 1px rgb(164, 88, 226);
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
-.footer--github__link > span, .footer--github__pages > span {
+.footer--github__link > span, .footer--pages__popup > span {
     display: inline-flex;
     align-items: center;
     padding: 0 5px;
@@ -223,7 +224,7 @@ body {
 }
 
 /* Popup header */
-.popup--header {
+.popupHeader--container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -234,20 +235,20 @@ body {
     border-radius: 10px 10px 0px 0px;
 }
 
-.popup--header__logo {
+.popupHeader--logo {
     width: 30px;
     height: 30px;
     margin: 0px 5px;
 }
 
-.popup--header__title {
+.popupHeader--title {
     font-family: "Vandalism", sans-serif;
     font-size: 40px;
     margin: 0px 5px;
 }
 
 /* Popup main */
-.popup--pages__container {
+.popupMain {
     height: 850px;
     overflow: scroll;
     width: 375px;
@@ -259,99 +260,99 @@ body {
     margin-bottom: 0;
 }
 
-.popup--pages {
+.popupMain--container {
     height: auto;
     display: flex;
     flex-direction: column;
 }
 
-.popup--pages__header {
+.popupMain--header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.popup--pages__title {
+.popupMain--title {
     font-size: 25px;
     margin: 10px 0px 0px 10px;
 }
 
-.popup--pages__date {
+.popupMain--date {
     font-size: 12px;
     margin: 0px 0px 0px 15px;
 }
 
-.popup--pages__links {
+.popupMain--links {
     margin: 10px 10px 0px 0px;
 }
 
-.popup--pages__links > a {
+.popupMain--links > a {
     text-decoration: none;
     margin: 0 2px;
     color: rgb(0, 0, 0);
     padding: 5px 5px 0px 5px;
     background-color: rgb(255, 255, 255);
-    border-radius: 20px;
+    border-radius: 5px;
     border: 1px solid rgb(0, 0, 0);
 }
 
-.popup--pages__links .popup--pages__site {
+.popupMain--links .popupMain--site__link {
     background-color: black;
     color: rgb(255, 255, 255);
     display: flex-inline;
 }
 
-.popup--pages__links > a:hover {
+.popupMain--links > a:hover {
     opacity: 0.8;
 }
 
-.popup--pages__image {
+.popupMain--image {
     width: 80%;
     border-radius: 5px;
     margin: 10px 0px;
     align-self: center;
 }
 
-.popup--pages__about {
+.popupMain--about {
     font-size: 14px;
     margin: 0px 10px 0px 10px;
     text-align: center;
 }
 
-.popup--pages__languages {
+.popupMain--languages {
     text-align: center;
     margin: 10px 0px;
 }
 
-.popup--pages__languages > span {
+.popupMain--languages > span {
     margin: 0px 5px;
     font-size: 20px;
     border-radius: 5px;
     padding: 6px 5px 0px 5px;
 }
 
-.popup--language__html {
+.popupMain--language__html {
     background-color: rgb(218, 54, 29);
     color: rgb(255, 255, 255);
 }
 
-.popup--language__css {
+.popupMain--language__css {
     background-color: rgb(68, 43, 104);
     color: rgb(255, 255, 255);
 }
 
-.popup--language__js {
+.popupMain--language__js {
     background-color: rgb(238, 219, 73);
     color: rgb(0, 0, 0);
 }
 
-.popup--language__react {
+.popupMain--language__react {
     background-color: rgb(82, 210, 250);
     color: rgb(255, 255, 255);
 }
 
 /* Popup footer */
-.popup--footer {
+.popupFooter--container {
     display: flex;
     justify-content: center;
     background-color: rgb(208, 171, 241);
@@ -359,7 +360,7 @@ body {
     border-radius: 0px 0px 10px 10px;
 }
 
-.popup--footer > button {
+.popupFooter--container > button {
     background-color: white;
     width: 40px;
     height: 40px;
@@ -371,13 +372,13 @@ body {
     padding-top: 4px;
 }
 
-.popup--footer > button:hover {
+.popupFooter--container > button:hover {
     opacity: 0.8;
     cursor: pointer;
 }
 
 /* Dark Mode */
-.dark.app--background {
+.dark.page--background {
     background-color: rgba(70, 70, 70, 0.979);
 }
 
@@ -389,13 +390,14 @@ body {
 .dark .info--theme__icon {
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
 }
 
-.dark .info--nav__container > h1 {
+.dark .info--container > h1 {
     color: rgb(255, 255, 255);
 }
 
-.dark .info--nav__container > h4 {
+.dark .info--container > h4 {
     color: rgb(208, 171, 241);
 }
 
@@ -429,11 +431,17 @@ body {
     background-color: rgb(44, 44, 44);
 }
 
-.dark .popup--container .popup--pages__container {
-    color: white;
+.dark .popup--container .popupMain {
+    color: rgb(255, 255, 255);
 }
 
-.dark .popup--container .popup--footer > button {
+.dark .popup--container .popupMain--links > a {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.dark .popup--container .popupFooter--container > button {
     background-color: rgb(54, 54, 54);
     color: rgb(255, 255, 255);   
 }
+
+
