@@ -1,7 +1,7 @@
 # Digital Business Card
 Solo project 1 for the Scrimba/FreeCodeCamp React tutorial - https://www.youtube.com/watch?v=bMknfKXIFA8 - static stie completed on 28/3/22 - see deployment on 30/03/22.
 
-Submitting as the bonus project for Academy Xi Web Development course - site now includes dark mode and interactive popup - completed on 10/04/22, deployed same date. 
+Submitting as the bonus project for Academy Xi Web Development course - site now includes dark mode and interactive popup - completed on 10/04/22.
 
 Built using HTML, CSS, Javascript, & React. 
 
