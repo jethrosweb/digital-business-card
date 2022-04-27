@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "../pics/jethros-web-logo.png"
+import logo from "../pics/jethros-web-logo-small.png"
 
 export default function PopupHeader() {
     return (

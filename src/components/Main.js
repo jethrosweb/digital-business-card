@@ -9,7 +9,7 @@ export default function Main(props) {
 
             <div>
                 <h3 className="main--title">About:</h3>
-                <p className="main--text">Junior Web Developer with a Bachelor of Arts (Deans List) and Bachelor of Business, 14 years in customer service, sales and operations management having managed teams up to 25 people. Currently training at Academy Xi in front end web development in addition to self-study to develop coding skills in HTML, CSS, JavaScript, and React.
+                <p className="main--text">Certified Junior Frontend Web Developer with a Bachelor of Arts (First Call Honours) and Bachelor of Business, 14 years in customer service, sales and operations management having managed teams up to 25 people. After 2.5 years working at Tesla in operations, I’ve decided to pivot my career into frontend web development/quality assurance testing to utilise my strengths in problem solving, troubleshooting, and a natural aptitude for coding.
                 </p>
             </div>
 

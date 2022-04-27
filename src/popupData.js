@@ -1,14 +1,29 @@
 export default [
     {
+        id: 10, 
+        title: "Quote Generator",
+        date: "27/04/2022",
+        about: "API driven interactive quote generator. Solo project from the freeCodeCamp Front End Development Libraries Certificate.",
+        pageUrl: "https://jethrosweb.github.io/1-random-quote-machine/",
+        codeUrl: "https://github.com/jethrosweb/1-random-quote-machine",
+        imageSrc: "./images/quote-generator.png",
+        html: true, 
+        css: false,
+        scss: true,
+        javascript: true,
+        react: true
+    },
+    {
         id: 9, 
         title: "Meme Generator",
         date: "06/04/2022",
-        about: "API driven interactive meme generator. Project from the Scrimba/FreeCodeCamp React tutorial series.",
+        about: "API driven interactive meme generator. Project from the Scrimba/freeCodeCamp React tutorial series.",
         pageUrl: "https://jethrosweb.github.io/meme-generator/",
         codeUrl: "https://github.com/jethrosweb/meme-generator",
         imageSrc: "./images/meme-generator.png",
         html: true, 
         css: true,
+        scss: false,
         javascript: true,
         react: true
     },
@@ -16,12 +31,13 @@ export default [
         id: 8,
         title: "Travel Journal", 
         date: "01/04/2022", 
-        about: "Local data driven internation travel journal. Solo project from the Scrimba/FreeCodeCamp React tutorial series.",
+        about: "Local data driven internation travel journal. Solo project from the Scrimba/freeCodeCamp React tutorial series.",
         pageUrl: "https://jethrosweb.github.io/travel-journal/",
         codeUrl: "https://github.com/jethrosweb/travel-journal", 
         imageSrc: "./images/travel-journal.png",
         html: true, 
         css: true,
+        scss: false,
         javascript: true,
         react: true
     },
@@ -29,12 +45,13 @@ export default [
         id: 7,
         title: "Airbnb Clone",
         date: "30/03/2022",
-        about: "Static Airbnb clone for mobile. Project from the Scrimba/FreeCodeCamp React tutorial series.",
+        about: "Static Airbnb clone for mobile. Project from the Scrimba/freeCodeCamp React tutorial series.",
         pageUrl: "https://jethrosweb.github.io/airbnb-experiences-clone/",
         codeUrl: "https://github.com/jethrosweb/airbnb-experiences-clone", 
         imageSrc: "./images/airbnb-clone.png",
         html: true, 
         css: true,
+        scss: false,
         javascript: true,
         react: true
     },
@@ -48,6 +65,7 @@ export default [
         imageSrc: "./images/calculator.png",
         html: true, 
         css: true,
+        scss: false,
         javascript: true,
         react: false
     },
@@ -61,6 +79,7 @@ export default [
         imageSrc: "./images/stopwatch.png",
         html: true, 
         css: true,
+        scss: false,
         javascript: true,
         react: false
     },
@@ -74,6 +93,7 @@ export default [
         imageSrc: "./images/digital-clock.png",
         html: true, 
         css: true,
+        scss: false,
         javascript: true,
         react: false
     },
@@ -87,6 +107,7 @@ export default [
         imageSrc: "./images/whac-a-console.png",
         html: true, 
         css: true,
+        scss: false,
         javascript: true,
         react: false
     },
@@ -100,6 +121,7 @@ export default [
         imageSrc: "./images/wedding-invitation.png",
         html: true, 
         css: true,
+        scss: false,
         javascript: true,
         react: false
     },
@@ -113,6 +135,7 @@ export default [
         imageSrc: "./images/responsive-site.png",
         html: true, 
         css: true,
+        scss: false,
         javascript: false,
         react: false
     }
