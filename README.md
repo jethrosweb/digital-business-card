@@ -6,8 +6,8 @@ Submitting as the bonus project for Academy Xi Web Development course - site now
 Built using HTML, CSS, Javascript, & React. 
 
 <p align="center">
-  <img width="20%" alt="Screen Shot 2022-04-10 at 12 06 31 pm" src="https://user-images.githubusercontent.com/96323853/162598166-7de00fdc-4fdf-44bf-865f-3095fe06e5ca.png">
-  <img width="20%" alt="Screen Shot 2022-04-10 at 12 33 43 pm" src="https://user-images.githubusercontent.com/96323853/162598693-051be95a-3cdb-44fb-b7b2-cfb1011ee6ee.png">
-  <img width="20%" alt="Screen Shot 2022-04-10 at 12 06 56 pm" src="https://user-images.githubusercontent.com/96323853/162598171-f556ea2e-99c9-4a3d-9623-76c636fd73e4.png">
-  <img width="20%" alt="Screen Shot 2022-04-10 at 12 33 55 pm" src="https://user-images.githubusercontent.com/96323853/162598699-68400154-3680-445b-b706-e66120fb4489.png">
+  <img width="20%" alt="Screen Shot 2022-04-27 at 4 20 48 pm" src="https://user-images.githubusercontent.com/96323853/165454169-ac35cd92-f321-4895-9682-f76299119803.png">
+  <img width="20%" alt="Screen Shot 2022-04-27 at 4 21 27 pm" src="https://user-images.githubusercontent.com/96323853/165454193-56aae876-a676-4565-83c3-de714a66f082.png">
+  <img width="20%" alt="Screen Shot 2022-04-27 at 4 21 02 pm" src="https://user-images.githubusercontent.com/96323853/165454202-18c10b34-f93d-4783-99f0-eb0b0063631c.png">
+  <img width="20%" alt="Screen Shot 2022-04-27 at 4 21 16 pm" src="https://user-images.githubusercontent.com/96323853/165454206-2b73267e-ea13-4a5e-909a-5bd54a000b06.png">
 </p>
