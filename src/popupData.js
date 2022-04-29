@@ -1,5 +1,19 @@
 export default [
     {
+        id: 11, 
+        title: "Markdown Previewer",
+        date: "29/04/2022",
+        about: "Interactive markdown previewer. Solo project from the freeCodeCamp Front End Development Libraries Certificate.",
+        pageUrl: "https://jethrosweb.github.io/2-markdown-previewer/",
+        codeUrl: "https://github.com/jethrosweb/2-markdown-previewer",
+        imageSrc: "./images/markdown-previewer.png",
+        html: true, 
+        css: false,
+        scss: true,
+        javascript: true,
+        react: true
+    },
+    {
         id: 10, 
         title: "Quote Generator",
         date: "27/04/2022",
