@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/digital-business-card/static/css/main.07af4984.css",
-    "main.js": "/digital-business-card/static/js/main.2492e0a6.js",
+    "main.js": "/digital-business-card/static/js/main.db4eef50.js",
     "static/media/photo.jpg": "/digital-business-card/static/media/photo.c1245dd6d2f5e9e8b44a.jpg",
     "static/media/melbuni.png": "/digital-business-card/static/media/melbuni.7f6b4fb6a8cf6edcd311.png",
     "static/media/latrobe.png": "/digital-business-card/static/media/latrobe.08b044bc2a9fc61d4c69.png",
@@ -9,10 +9,10 @@
     "static/media/academyxi.png": "/digital-business-card/static/media/academyxi.95212a3c2dbea318c7be.png",
     "index.html": "/digital-business-card/index.html",
     "main.07af4984.css.map": "/digital-business-card/static/css/main.07af4984.css.map",
-    "main.2492e0a6.js.map": "/digital-business-card/static/js/main.2492e0a6.js.map"
+    "main.db4eef50.js.map": "/digital-business-card/static/js/main.db4eef50.js.map"
   },
   "entrypoints": [
     "static/css/main.07af4984.css",
-    "static/js/main.2492e0a6.js"
+    "static/js/main.db4eef50.js"
   ]
 }
